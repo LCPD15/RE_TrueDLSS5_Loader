@@ -68,7 +68,9 @@ The tool falls back to zero-vector mode automatically — everything still works
 
 ## Related
 
-- Onimusha color-fix mod: https://www.nexusmods.com/onimushawayofthesword/mods/23
+- Onimusha ColorCorrection: https://www.nexusmods.com/onimushawayofthesword/mods/23
+- Onimusha RE_TrueDLSS5_Loader: https://www.nexusmods.com/onimushawayofthesword/mods/32
+- ColorCorrection_MonsterHunterWilds: https://www.nexusmods.com/monsterhunterwilds/mods/341
 
 ---
 
