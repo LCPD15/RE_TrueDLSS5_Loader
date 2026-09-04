@@ -1,4 +1,4 @@
-<img width="4096" height="2160" alt="image" src="https://github.com/user-attachments/assets/80ea23e0-3eaa-40f8-b8b6-edcff76b6c47" /># DLSS5 Neural Rendering Load Tool
+# DLSS5 Neural Rendering Load Tool
 
 🌍 **English** | [简体中文](./README_ZH.md)
 
