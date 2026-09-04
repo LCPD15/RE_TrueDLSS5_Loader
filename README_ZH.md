@@ -70,6 +70,7 @@
 ## 相关
 
 - 鬼武者色彩修复 mod：https://www.nexusmods.com/onimushawayofthesword/mods/23
+- 怪猎荒野色彩修复 mod：https://www.nexusmods.com/monsterhunterwilds/mods/341
 
 ---
 
