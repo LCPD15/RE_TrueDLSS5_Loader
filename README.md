@@ -1,4 +1,4 @@
-# DLSS5 Neural Rendering Load Tool
+<img width="4096" height="2160" alt="image" src="https://github.com/user-attachments/assets/80ea23e0-3eaa-40f8-b8b6-edcff76b6c47" /># DLSS5 Neural Rendering Load Tool
 
 🌍 **English** | [简体中文](./README_ZH.md)
 
@@ -10,6 +10,9 @@ A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders
 - **Higher frame rate** — lower the neural-render internal resolution to save GPU time while the image stays sharp.
 - **Zero config** — drop the files next to the game's `.exe` and launch; DLSS5 is on by default with recommended settings.
 - **In-game menu** — tweak every parameter and view debug info without leaving the game.
+- <img width="4096" height="2160" alt="image" src="https://github.com/user-attachments/assets/b922778a-3d6e-4612-961a-fa8e3cfa08d0" />
+
+
 
 ## Requirements
 
