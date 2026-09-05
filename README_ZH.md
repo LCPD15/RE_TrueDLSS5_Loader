@@ -15,7 +15,7 @@
 ## 前置要求
 
 1. **NVIDIA RTX** 显卡 + 最新驱动。
-2. **[REFramework](https://github.com/praydog/REFramework)** — RE 引擎游戏必装。
+2. **[REFramework](https://github.com/praydog/REFramework-nightly)** — RE 引擎游戏必装。
 3. **[ReShade](https://www.reshade.me/#download)**。— RE 引擎游戏必装，其他游戏只装RE_TrueDLSS5_Loader也行。
 
 ## 安装
