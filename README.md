@@ -1,6 +1,6 @@
 # DLSS5 Neural Rendering Load Tool
 
-🌍 **English** | [简体中文](./README_ZH.md)
+🎉 **English** | [简体中文](./README_ZH.md)
 
 A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders can't read the engine's native motion-vector data, which is exactly what makes DLSSNR flicker or do nothing — this one can.
 
@@ -12,13 +12,11 @@ A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders
 - **In-game menu** — tweak every parameter and view debug info without leaving the game.
 - <img width="4096" height="2160" alt="image" src="https://github.com/user-attachments/assets/b922778a-3d6e-4612-961a-fa8e3cfa08d0" />
 
-
-
 ## Requirements
 
 1. An **NVIDIA RTX** GPU with up-to-date drivers.
 2. **[REFramework](https://github.com/praydog/REFramework)** — required for RE Engine games.
-3. **[ReShade](https://www.reshade.me/#download)**. — The RE engine game is a must-have. For other games, you only need to install RE_TrueDLSS5_Loader. You can also install them together.
+3. **[ReShade](https://www.reshade.me/#download)** — required for RE Engine games. For other games, installing only RE_TrueDLSS5_Loader is fine.
 
 ## Install
 
@@ -37,15 +35,15 @@ A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders
 
 | Parameter | Range | What it does |
 |---|---|---|
-| **Inputs** | Native / Zero | Input source — native depth + motion captured from the game's DLSS, or empty buffers as a safe fallback. |
-| **Preset** | 0–4 | Neural model weight set; tunes detail recovery vs. temporal stability (0 = quality-leaning default). |
+| **Inputs** | Native / Zero | Input source — Native uses the game DLSS's real depth + motion vectors; Zero uses empty buffers as a safe fallback. |
+| **Preset** | 0–4 | Neural model preset; tunes detail recovery vs. temporal stability (0 = quality-leaning default). |
 | **Style** | Default / Natural / Cinematic | Overall look of the neural pass. |
-| **Intensity** | 0.0–1.0 | Overall strength of the enhancements; 0 = original frame, 1 = full effect. |
+| **Intensity** | 0.0–1.0 | Overall strength of the enhancement; 0 = original frame, 1 = full effect. |
 | **Local Tone** | 0.0–2.0 | Low-frequency detail: broad lighting and colour response. |
 | **Local Structure** | 0.0–2.0 | High-frequency detail: ambient occlusion, contact shadows, reflections, subsurface scattering. |
 | **Skin Strength** | 0.0–1.0 | Skin-specific enhancement (natural subsurface scattering). |
 | **Auto Mask** | on/off | Semantic AI mask — limits enhancement to the intended targets. |
-| **UI Correction** | on/off | Keeps UI / HUD / text crisp by excluding interface regions from the pass. |
+| **UI Correction** | on/off | Keeps UI / HUD / text crisp by excluding interface regions. |
 | **NR Render Scale** | 0.5–1.0 | Internal compute resolution of the neural pass; lower = cheaper but softer. |
 | **Debug view** | Off / Depth / Motion / Encoded / Diff | Overlay a live view of the filter inputs / output. |
 
@@ -62,8 +60,16 @@ Other DX12 / DX11 games should work in theory (also tested: Death Stranding 2, T
 
 ## Known issues
 
-1. **Not compatible with frame generation** (FSRFG / DLSSFG) — it crashes the game. Disable FG in-game before installing.
+1. **Can't run with in-game frame generation** (FSRFG / DLSSFG): when the game turns frame generation on, the mod disables itself automatically and shows a notice; turn it off in-game and the mod restores itself — no restart needed. If detection is wrong on a specific game, adjust `fgBufferCountThreshold` in `RE_DLSS5_Core_settings.json` (default `4`; raise it to `5`/`6` for false positives, lower it to `3` for misses).
 2. **Path tracing** in RESIDENT EVIL requiem (and some others) blocks native motion-vector capture.
+
+## Want frame interpolation? Use NVIDIA App's Smooth Motion
+
+This mod can't run with in-game frame generation, but it works perfectly with NVIDIA's **driver-level** AI interpolation — **"Smooth Motion" in the NVIDIA App**. It interpolates at the driver's display-output stage, so it never touches the game's render pipeline and never conflicts with this mod.
+
+- Requirements: NVIDIA RTX 50-series GPU + recent driver (40-series needs the 590.26 preview driver or newer), plus Windows "Hardware-accelerated GPU scheduling" enabled.
+- The mod's **F9** menu includes a "Frame Gen (NVIDIA Smooth Motion)" toggle — tick it and restart the game. It writes the driver's per-app profile directly, i.e. it flips the switch for you.
+- Or enable it manually: NVIDIA App → Graphics → Program Settings → pick the game → Driver Settings → Smooth Motion.
 
 ## What if the game has no DLSS?
 
