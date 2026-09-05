@@ -18,7 +18,7 @@ A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders
 
 1. An **NVIDIA RTX** GPU with up-to-date drivers.
 2. **[REFramework](https://github.com/praydog/REFramework)** — required for RE Engine games.
-3. **[ReShade](https://www.reshade.me/#download)**.
+3. **[ReShade](https://www.reshade.me/#download)**. — The RE engine game is a must-have. For other games, you only need to install RE_TrueDLSS5_Loader. You can also install them together.
 
 ## Install
 
