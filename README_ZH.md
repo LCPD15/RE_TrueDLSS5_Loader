@@ -2,7 +2,7 @@
 
 🌍 [English](./README.md) | **简体中文**
 
-即插即用 DLSS5 / DLSSNR 加载器。支持帧生成、原生矢量的，理论上兼容大部分dx12/dx11游戏
+即插即用 DLSS5 / DLSSNR 加载器。支持帧生成、原生矢量，可以获得稳定，高性能的DLSS5体验，理论上兼容大部分dx12/dx11游戏
 视频：https://www.bilibili.com/video/BV1FDtz6SEXF
 https://www.bilibili.com/video/BV1AubL6WEKe
 
