@@ -13,6 +13,7 @@ https://www.bilibili.com/video/BV1AubL6WEKe
 - **零配置** — 把文件解压到游戏 `.exe` 旁即可，进游戏默认开启 DLSS5，参数已调成推荐值。
 - **游戏内菜单** — 不用退出游戏就能调所有参数、查看 debug 信息。
 - <img width="4096" height="2160" alt="image" src="https://github.com/user-attachments/assets/b922778a-3d6e-4612-961a-fa8e3cfa08d0" />
+- <img width="2677" height="1506" alt="image" src="https://github.com/user-attachments/assets/459a24ee-18bd-4652-a0af-f277ebe79c58" />
 
 ## 前置要求
 
