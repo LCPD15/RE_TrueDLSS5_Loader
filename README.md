@@ -2,7 +2,7 @@
 
 🎉 **English** | [简体中文](./README_ZH.md)
 
-A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders can't read the engine's native motion-vector data, which is exactly what makes DLSSNR flicker or do nothing — this one can.
+Plug‑and‑play DLSS5 / DLSSNR Loader. Featuring Frame Generation and native motion‑vector support, it delivers a stable, high‑performance DLSS5 experience. Theoretically compatible with most DX12 / DX11 games.
 
 ## Features
 
