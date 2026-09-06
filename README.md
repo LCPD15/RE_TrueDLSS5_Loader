@@ -60,16 +60,9 @@ Other DX12 / DX11 games should work in theory (also tested: Death Stranding 2, T
 
 ## Known issues
 
-1. **Can't run with in-game frame generation** (FSRFG / DLSSFG): when the game turns frame generation on, the mod disables itself automatically and shows a notice; turn it off in-game and the mod restores itself — no restart needed. If detection is wrong on a specific game, adjust `fgBufferCountThreshold` in `RE_DLSS5_Core_settings.json` (default `4`; raise it to `5`/`6` for false positives, lower it to `3` for misses).
-2. **Path tracing** in RESIDENT EVIL requiem (and some others) blocks native motion-vector capture.
+1. **Can't run with in-game frame generation** (FSRFG / DLSSFG): Fixed in latest version
+2. **Path tracing** in RESIDENT EVIL requiem (and some others) blocks native motion-vector capture.：Fixed in latest version
 
-## Want frame interpolation? Use NVIDIA App's Smooth Motion
-
-This mod can't run with in-game frame generation, but it works perfectly with NVIDIA's **driver-level** AI interpolation — **"Smooth Motion" in the NVIDIA App**. It interpolates at the driver's display-output stage, so it never touches the game's render pipeline and never conflicts with this mod.
-
-- Requirements: NVIDIA RTX 50-series GPU + recent driver (40-series needs the 590.26 preview driver or newer), plus Windows "Hardware-accelerated GPU scheduling" enabled.
-- The mod's **F9** menu includes a "Frame Gen (NVIDIA Smooth Motion)" toggle — tick it and restart the game. It writes the driver's per-app profile directly, i.e. it flips the switch for you.
-- Or enable it manually: NVIDIA App → Graphics → Program Settings → pick the game → Driver Settings → Smooth Motion.
 
 ## What if the game has no DLSS?
 
