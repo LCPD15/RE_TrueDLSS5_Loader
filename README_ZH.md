@@ -62,16 +62,9 @@ https://www.bilibili.com/video/BV1AubL6WEKe
 
 ## 已知问题
 
-1. **无法和游戏内帧生成同时使用**（FSRFG / DLSSFG 都不行）：检测到游戏开启帧生成后，MOD 会自动关闭并弹提示；在游戏里关闭帧生成后，MOD 会自动恢复，无需重启游戏。若个别游戏检测不准，可打开游戏目录下 `RE_DLSS5_Core_settings.json` 修改 `fgBufferCountThreshold`（默认 `4`；误判调大 `5`/`6`，漏检调小 `3`）。
-2. **路径追踪**：生化危机9 及部分游戏开路径追踪后拿不到原生矢量。
+1. **无法和游戏内帧生成同时使用**（FSRFG / DLSSFG 都不行）：已经修复
+2. **路径追踪**：生化危机9 及部分游戏开路径追踪后拿不到原生矢量。： 已经修复
 
-## 想要补帧怎么办？（NVIDIA App AI 插帧 / Smooth Motion）
-
-本 MOD 不能和游戏内帧生成共存，但可以搭配 NVIDIA **驱动级**的 AI 插帧——**NVIDIA App 里的「Smooth Motion（平滑运动 / AI 插帧）」**。它在驱动输出阶段插帧，完全不碰游戏渲染管线，因此和本 MOD 天然不冲突。
-
-- 需要：NVIDIA RTX 50 系显卡 + 新版驱动（40 系需 590.26 或更新的预览驱动），并开启 Windows 的「硬件加速 GPU 计划」。
-- 本 MOD 的 **F9** 菜单已内置「Frame Gen (NVIDIA Smooth Motion)」开关，勾选后重启游戏即可生效（它直接改驱动的 per-app 配置，等于替你在 NVIDIA App 里点开关）。
-- 或手动开启：NVIDIA App → 图形 → 程序设置 → 选游戏 → 驱动设置 → Smooth Motion。
 
 ## 游戏没有 DLSS 怎么办？
 
