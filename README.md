@@ -11,6 +11,10 @@ A drop-in **DLSS5 / DLSSNR** loader built for **RE Engine** games. Other loaders
 - **Zero config** — drop the files next to the game's `.exe` and launch; DLSS5 is on by default with recommended settings.
 - **In-game menu** — tweak every parameter and view debug info without leaving the game.
 - <img width="4096" height="2160" alt="image" src="https://github.com/user-attachments/assets/b922778a-3d6e-4612-961a-fa8e3cfa08d0" />
+- <img width="2677" height="1506" alt="image" src="https://github.com/user-attachments/assets/459a24ee-18bd-4652-a0af-f277ebe79c58" />
+
+
+
 
 ## Requirements
 
